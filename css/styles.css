@@ -1,0 +1,377 @@
+
+body {
+  font-family: "Montserrat";
+  text-align: center;  
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat-Bold";
+}
+
+p {
+  color: #8f8f8f;
+}
+
+/* Main Banner */
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0; /* No border radius */
+  background-color: #9C261E; /* Red background color */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Default shadow */
+  transition: box-shadow 0.3s, transform 0.3s;
+  height: 450px; /* Set a fixed height for the card */
+}
+
+.card:hover {
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+  transform: translateY(-5px);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-image: url('./images/b2.png');  */
+  background-color: #9C261E;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  opacity: 0.7; /* Set the opacity to make the background image visible */
+  transition: opacity 0.3s;
+}
+
+.card:hover::before {
+  opacity: 0.7; /* Keep opacity at 0.7 even on hover */
+}
+
+.card-body {
+  height: 100%; /* Fill the entire height of the card */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.card-text {
+  white-space: nowrap; /* Limit text to one line */
+  overflow: hidden;
+  /* text-overflow: ellipsis; // Add ellipsis (...) for overflow text */
+  font-family: "Montserrat-Black";
+  font-weight: 800;
+  color: white;
+  font-size: 3.5rem;
+  text-align: left;
+}
+
+.card-link {
+  font-family: "Montserrat-Black";
+  font-weight: 800;
+  color: white;
+  font-size: 2rem;
+  text-align: left;
+}
+
+
+/* Headings */
+
+.big-heading {
+  font-family: "Montserrat-Black";
+  /* font-family: var(--font-plus-jakarta-sans); */
+  font-size: 4.5rem;
+  /* line-height: 1.5; */
+  font-weight: 800;
+}
+.small-heading {
+  font-family: "Montserrat-Black";
+  font-weight: 400;
+  font-size: 2.4rem;
+
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* Containers */
+
+.container-fluid{
+  padding: 7% 15%;
+}
+
+/* Sections */
+
+.colored-section {
+  background-color: #E5190B;
+  color: #fff;
+}
+
+.white-section {
+  background-color: #fff;
+}
+
+/* Navigation Bar */
+
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+  width: 200px;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat-Light";
+}
+
+/* Buttons */
+
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+/* Title Section */
+
+#title {
+  background-image: url("../images/bg.png");
+  /* background-size: cover; 
+  background-position: center;  */
+  color: #fff;
+  
+  text-align: left;
+}
+
+
+#title .container-fluid {
+  padding: 3% 10% 0%;
+}
+
+
+/* Features Section */
+.white-section {
+  background-color: #ffffff; /* Set background color as needed */
+  padding-top: 40px;
+  margin-bottom: -5%;
+}
+
+.feature-box {
+  text-align: center;
+  position: relative;
+  background-color: #F6F6F6;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.feature-box img {
+  width: 100px; /* Adjust the width as needed */
+  height: 100px; /* Adjust the height as needed */
+}
+
+.feature-title {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-size: 3.5rem;
+  color: #473082;
+  position: relative;
+  display: inline-block;
+  font-weight: 900;
+}
+
+.feature-title::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -60%; /* Adjust the distance of the line from the text */
+  height: 100px;
+  width: 1px; /* Adjust the width of the vertical line */
+  background-color:black; /* Set color of the vertical line */
+}
+
+.feature-box:last-child .feature-title::after {
+  display: none; /* Hides the vertical line for the last item */
+}
+
+.feature-description {
+  font-family: inherit;
+  font-size: 1.2rem;
+  color: #473082;
+  font-weight: 900;
+}
+
+.feature-box:hover .feature-title {
+  color: #E5190B; /* Change text color to red on hover */
+}
+.feature-box:hover .feature-description {
+  color: #E5190B; /* Change text color to red on hover */
+}
+
+@media (max-width: 768px) {
+.feature-title::after {
+  display: none;
+}
+}
+
+/* Testimonial Section */
+
+#testimonials {
+  background-color: #ef8172;
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+
+#press {
+  background-color: #ef8172;
+  padding-bottom: 3%;
+}
+
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+/* Pricing Section */
+
+#pricing {
+  padding: 60px;
+  
+}
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
+  
+}
+
+.pricing-column {
+  padding: 3% 0%;
+ 
+}
+
+/* CTA Section */
+
+
+/* Footer Section */
+
+
+.social-icon {
+  margin: 20px 10px;
+}
+
+/* Dot card slider  */
+
+.card-group{
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: white;
+  padding-bottom: 5%;
+
+}
+
+.card-slider{
+  position: relative;
+  overflow: none;
+  border-radius: 0; /* No border radius */
+  background-color: #ffffff; /* Red background color */
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1); /* Default shadow */
+  transition: box-shadow 0s, transform 0s;
+  border: 0;
+  height: auto;
+}
+
+.card-slider::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+/* background-image: url('./images/b2.png');  */
+background-color: #ffffff;
+background-size: cover;
+background-position: center;
+z-index: -1;
+opacity: 0; /* Set the opacity to make the background image visible */
+transition: opacity 0s;
+}
+
+.carousel-indicators .active {
+  background-color: black;
+  width: 10px; /* Same width as inactive indicators */
+  height: 10px; /* Same height as inactive indicators */
+  border-radius: 50%;
+}
+
+.carousel-indicators li {
+  position: relative;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  width: 10px;
+  height: 10px;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  background-color: rgba(82, 74, 74, 0.5);
+  border-radius: 50%;
+}
+
+
+
+.card-slider-text{
+font-style: italic; 
+text-align: left;
+font-weight: 800;
+
+}
+
+.card-slider-description{
+text-align: left;
+font-weight: 800;
+
+}
+
+.north-east-icon{
+float: left; /* Align the container to the left */
+margin-right: 20px; /* Adjust margin to create space */
+padding-left: 10px; /* Adjust padding if needed */
+}
+
+@media (max-width: 1028px) {
+
+  #title {
+    text-align: left;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
+
+  .card-text {
+    font-size: 2rem;
+  }  
+}
