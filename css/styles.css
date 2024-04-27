@@ -19,7 +19,7 @@ p {
   position: relative;
   overflow: hidden;
   border-radius: 0; /* No border radius */
-  background-color: #E5190B; /* Red background color */
+  background-color: #9C261E; /* Red background color */
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Default shadow */
   transition: box-shadow 0.3s, transform 0.3s;
   height: 500px; /* Set a fixed height for the card */
@@ -38,7 +38,7 @@ p {
   width: 100%;
   height: 100%;
   /* background-image: url('./images/b2.png');  */
-  background-color: #9C261E;
+  background-color: #E5190B;
   background-size: cover;
   background-position: center;
   z-index: -1;
