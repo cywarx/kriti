@@ -1,6 +1,7 @@
 
 body {
-  font-family: "Montserrat";
+  /* font-family: "Montserrat"; */
+  font-family: "Outfit", sans-serif;
   text-align: center;  
   overflow-x: hidden;
 }
@@ -18,10 +19,10 @@ p {
   position: relative;
   overflow: hidden;
   border-radius: 0; /* No border radius */
-  background-color: #9C261E; /* Red background color */
+  background-color: #E5190B; /* Red background color */
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Default shadow */
   transition: box-shadow 0.3s, transform 0.3s;
-  height: 450px; /* Set a fixed height for the card */
+  height: 500px; /* Set a fixed height for the card */
 }
 
 .card:hover {
@@ -41,7 +42,7 @@ p {
   background-size: cover;
   background-position: center;
   z-index: -1;
-  opacity: 0.7; /* Set the opacity to make the background image visible */
+  opacity: 0.9; /* Set the opacity to make the background image visible */
   transition: opacity 0.3s;
 }
 
@@ -56,14 +57,18 @@ p {
   justify-content: center;
   text-align: center;
   overflow: hidden;
+  padding-bottom: 10%;
+  line-height: 1;
+  
 }
 
 .card-text {
   white-space: nowrap; /* Limit text to one line */
   overflow: hidden;
   /* text-overflow: ellipsis; // Add ellipsis (...) for overflow text */
-  font-family: "Montserrat-Black";
-  font-weight: 800;
+  font-family: "public-sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
   color: white;
   font-size: 3.5rem;
   text-align: left;
@@ -81,17 +86,18 @@ p {
 /* Headings */
 
 .big-heading {
-  font-family: "Montserrat-Black";
-  /* font-family: var(--font-plus-jakarta-sans); */
-  font-size: 4.5rem;
-  /* line-height: 1.5; */
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 4rem;
   font-weight: 800;
 }
 .small-heading {
-  font-family: "Montserrat-Black";
-  font-weight: 400;
-  font-size: 2.4rem;
-
+  font-family: "inter", sans-serif;
+  font-weight: 300;
+  font-size: 1.8rem;
+  padding-top: 7%;
+  padding-right: 10%;
+  padding-left: 10%;
 }
 
 .section-heading {
@@ -108,7 +114,7 @@ p {
 /* Sections */
 
 .colored-section {
-  background-color: #E5190B;
+  /* background-color: #E5190B; */
   color: #fff;
 }
 
@@ -147,13 +153,16 @@ p {
 /* Title Section */
 
 #title {
-  background-image: url("../images/bg.png");
-  /* background-size: cover; 
-  background-position: center;  */
+  background-image: url("../images/bg0.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: 0 0, 0 100%, 0 200%;
   color: #fff;
-  
   text-align: left;
 }
+
+
+
 
 
 #title .container-fluid {
@@ -256,8 +265,11 @@ p {
 /* Pricing Section */
 
 #pricing {
-  padding: 60px;
-  
+  /* padding: 60px; */
+  padding-bottom: 4%;
+  margin-bottom: -6.9%;
+  margin-left: 1%;
+  margin-right: 1%;
 }
 
 .price-text {
@@ -360,6 +372,21 @@ margin-right: 20px; /* Adjust margin to create space */
 padding-left: 10px; /* Adjust padding if needed */
 }
 
+.additional-box {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+.card1-3{
+  padding-top: 30%;
+}
+.card2{
+  /* code here */
+}
+
 @media (max-width: 1028px) {
 
   #title {
@@ -374,4 +401,19 @@ padding-left: 10px; /* Adjust padding if needed */
   .card-text {
     font-size: 2rem;
   }  
+
+  .small-heading {
+    padding-top: 5%;
+    padding-right: 0%;
+    padding-left: 0%;
+  }
+
+  .card1-3{
+    padding-top: 30%;
+  }
+  /* .big-heading {
+    font-size: 3.8rem;
+  } */
+
+
 }
