@@ -14,7 +14,10 @@ p {
   color: #8f8f8f;
 }
 
+/* -------------------------------- */
 /* Main Banner */
+/* -------------------------------- */
+
 .card {
   position: relative;
   overflow: hidden;
@@ -114,7 +117,7 @@ p {
 /* Sections */
 
 .colored-section {
-  /* background-color: #E5190B; */
+  background-color: #E5190B;
   color: #fff;
 }
 
@@ -152,15 +155,23 @@ p {
 
 /* Title Section */
 
-#title {
-  background-image: url("../images/bg0.png");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  background-position: 0 0, 0 100%, 0 200%;
-  color: #fff;
-  text-align: left;
+@keyframes slide {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
 }
 
+#title {
+  background-image: url("../images/bg0.webp");
+  background-repeat: no-repeat;
+  background-size: 120% auto; /* Double the width for smooth sliding */
+  color: #fff;
+  text-align: left;
+  animation: slide 10s linear infinite; /* Adjust the duration as needed */
+}
 
 
 
@@ -169,8 +180,10 @@ p {
   padding: 3% 10% 0%;
 }
 
-
+/* -------------------------------- */
 /* Features Section */
+/* -------------------------------- */
+
 .white-section {
   background-color: #ffffff; /* Set background color as needed */
   padding-top: 40px;
@@ -234,7 +247,9 @@ p {
 }
 }
 
+/* -------------------------------- */
 /* Testimonial Section */
+/* -------------------------------- */
 
 #testimonials {
   background-color: #ef8172;
@@ -293,7 +308,53 @@ p {
   margin: 20px 10px;
 }
 
+
+/* -------------------------------- */
 /* Dot card slider  */
+/* -------------------------------- */
+
+.logic-gate-child {
+  height: 9.7px;
+  width: 168.9px;
+  position: relative;
+  object-fit: contain;
+}
+.title-story{
+  font-weight: 800;
+}
+.title-story-parent{
+  margin-bottom: 5%;
+  margin-top: 8%;
+}
+
+.card-img-right{
+  width: auto;
+}
+
+.card-left-line{
+  text-align: left;
+  color: #000;
+  position: relative; /* Set position to relative */
+
+}
+
+.card-left-line::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px; /* Width of the vertical line */
+  height: 170px; /* Cover full height */
+  background-color: #000; /* Color of the line */
+  
+}
+
+.card-left-text{
+  text-align: left;
+  color: #000;
+  padding-left: 5%;
+
+}
 
 .card-group{
   margin-left: 10%;
@@ -387,9 +448,198 @@ padding-left: 10px; /* Adjust padding if needed */
   /* code here */
 }
 
+/* -------------------------------- */
+/* Follow UP */
+/* -------------------------------- */
+
+.image-h-full-icon {
+  height: 127px;
+  max-width: 100%;
+ 
+}
+
+.yt-card{
+  background-color: #FFF0F0; 
+  border-radius: 5%;
+  font-size: 0.8rem;
+}
+
+.yt-card-description{
+  margin-top: 10%; 
+  margin-bottom: 10%;
+  text-align: left;
+}
+
+.twitter-card{
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: #FFF0F0; 
+  border-radius: 5%;
+  margin-right: 6%;
+}
+
+.linkedin-card{
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: #FFF0F0; 
+  border-radius: 5%;
+  margin-left:-12%;
+}
+
+/* -------------------------------- */
+/* Red Banner */
+/* -------------------------------- */
+
+  .image-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .image-wrapper img {
+    width: 100%;
+    height: auto;
+  }
+
+  .smaller-image {
+    max-width: 70%; /* Adjust the percentage as needed */
+    max-height: auto;
+  }
+
+  .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: blue;
+    /* background-color: rgba(17, 0, 255, 0.5); */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 100px;
+  }
+
+  .additional-section {
+    margin-top: -25vh; /* Adjust this value to overlap the previous section */
+    background-color: blue; /* Change this to your desired color */
+    border-radius: 10% 10% 0 0;
+    padding: 0[x] 0; /* Adjust padding as needed */
+    position: relative;
+    z-index: -1; /* Ensure this section stays behind the red box */
+  }
+
+  .inner-section {
+    background-color: white; /* Or any other color you prefer */
+    padding: 0px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+  }
+
+  .red-img1 {
+    height: 42vh;
+  }
+  
+  /* New section with dark background */
+  .dark-section {
+    background-color: #1D1D1D; /* Dark color */
+    width: 100%; /* 100% width of the container */
+      position: relative;
+    float: left;
+    border-radius: 2%;
+  }
+
+  .dark-section .inner-section {
+    background-color: #1D1D1D; 
+  }
+
+  .dark-section .inner-section-text {
+      text-align: left;
+    }
+.image-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: auto;
+}
+
+.smaller-image {
+  max-width: 70%; /* Adjust the percentage as needed */
+  max-height: auto;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: blue;
+  /* background-color: rgba(17, 0, 255, 0.5); */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 100px;
+}
+
+.additional-section {
+  margin-top: -25vh; /* Adjust this value to overlap the previous section */
+  background-color: blue; /* Change this to your desired color */
+  border-radius: 10% 10% 0 0;
+  padding: 0[x] 0; /* Adjust padding as needed */
+  position: relative;
+  z-index: -1; /* Ensure this section stays behind the red box */
+}
+
+.inner-section {
+  background-color: white; /* Or any other color you prefer */
+  padding: 0px;
+  margin-bottom: 0px;
+  border-radius: 10px;
+}
+
+.red-img1 {
+  height: 42vh;
+}
+
+/* New section with dark background */
+.dark-section {
+  background-color: #1D1D1D; /* Dark color */
+  width: 100%; /* 100% width of the container */
+    position: relative;
+  float: left;
+  border-radius: 2%;
+}
+
+.dark-section .inner-section {
+  background-color: #1D1D1D; 
+}
+
+.dark-section .inner-section-text {
+    text-align: left;
+  }
+
+/* -------------------------------- */
+/* Blog Section  */
+/* -------------------------------- */
+
+.blog-text{
+  padding-top: 10%;
+  padding-left: 10%;
+  margin-bottom: 5%;
+  color: #000;
+}
+
+
+/* ======== || MOBILE SCREEN || ========== */
+
 @media (max-width: 1028px) {
 
   #title {
+    background-repeat:repeat;
+    background-size: 100% auto;
+    background-position: 0 0, 0 100%, 0 200%;
+    color: #fff;
     text-align: left;
   }
 
@@ -415,5 +665,48 @@ padding-left: 10px; /* Adjust padding if needed */
     font-size: 3.8rem;
   } */
 
+
+  /* Follow UP */
+
+  .yt-card-description{
+    margin-top: 5%; 
+    margin-bottom: 5%;
+    text-align: left;
+  }
+  .twitter-card{
+    margin-top: 5%; 
+    margin-bottom: 5%;
+    background-color: #FFF0F0; 
+    border-radius: 5%;
+    margin-right: 0%;
+  }
+
+  .linkedin-card{
+    margin-top: 5%; 
+    margin-bottom: 5%;
+    background-color: #FFF0F0; 
+    border-radius: 5%;
+    margin-left: 0%;
+  }
+
+  /* Red Banner  */
+  .dark-section .inner-section {
+    background-color: #1D1D1D; 
+    padding-left: 25%;
+  }
+
+  .dark-section .inner-section-text {
+    padding-left: 10%;
+    text-align: justify;
+    padding-bottom: 10%;
+  }
+
+  /* Blog Section  */
+  .blog-text{
+    padding-top: 10%;
+    padding-left: 5%;
+    margin-bottom: 5%;
+    color: #000;
+  }
 
 }
