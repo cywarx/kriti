@@ -710,3 +710,24 @@ padding-left: 10px; /* Adjust padding if needed */
   }
 
 }
+
+
+/* For MacBook */
+@media only screen and (max-width: 1440px) {
+  /* Your CSS styles for MacBook screens here */
+}
+
+/* For iMac */
+@media only screen and (min-width: 1441px) {
+  /* Your CSS styles for iMac screens here */
+
+  #pricing {
+    padding-bottom: 5%;
+  }
+
+  .pricing-column {
+    padding: 2% 0%;
+    margin-top: 20%;
+  }
+
+}
