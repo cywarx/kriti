@@ -165,7 +165,7 @@ p {
 }
 
 #title {
-  background-image: url("../images/bg0.webp");
+  background-image: url("../images/bg0.png");
   background-repeat: no-repeat;
   background-size: 120% auto; /* Double the width for smooth sliding */
   color: #fff;
