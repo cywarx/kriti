@@ -1,44 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Instagram Post Card</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Upper U-Shaped Curve</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Hide scrollbars */
+        }
+        canvas {
+            display: block; /* Make the canvas fill the entire width of its container */
+            border: 0px solid black;
+        }
+    </style>
 </head>
 <body>
+    <canvas id="myCanvas"></canvas>
 
-<div class="container mt-4">
-  <div class="card">
-    <!-- Card Header -->
-    <div class="card-header">
-      <div class="d-flex align-items-center">
-        <img src="./images/oval@2x.png" alt="User Icon" class="rounded-circle mr-2" style="width: 40px;">
-        <div>
-          <h5 class="mb-0">Induct</h5>
-          <p class="text-muted mb-0">Delhi, India</p>
-        </div>
-        <span class="ml-auto"> ... </span>
-      </div>
-    </div>
+    <script>
+        // Get the canvas element
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
 
-    <!-- Card Image -->
-    <img src="./images/rectangle@2x.png" class="card-img-top" alt="Post Image">
+        // Resize canvas to fill the window width
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = 200; // Set a fixed height or adjust as needed
+            drawUpperCurve(); // Redraw the curve after resizing
+        }
 
-    <!-- Card Footer -->
-    <div class="card-footer d-flex justify-content-between">
-      <!-- Left Corner Buttons -->
-      <div>
-        <!-- Like, Comment, Share Icons -->
-        <span class="mr-3">Like</span>
-        <span class="mr-3">Comment</span>
-        <span class="mr-3">Share</span>
-      </div>
-      <!-- Right Corner Button -->
-      <span>Save</span>
-    </div>
-  </div>
-</div>
+        // Draw the upper U-shaped curve
+        function drawUpperCurve() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear canvas
 
+            var startX = 0;
+            var startY = canvas.height / 2;
+            var controlX = canvas.width / 2;
+            var controlY = canvas.height;
+            var endX = canvas.width;
+            var endY = canvas.height / 2;
+
+            ctx.beginPath();
+            ctx.moveTo(startX, startY); // Starting point
+            ctx.quadraticCurveTo(controlX, controlY, endX, endY); // Quadratic curve (control point at the bottom)
+            ctx.lineTo(endX, 0); // Straight line to the top-right corner
+            ctx.lineTo(0, 0); // Straight line to the top-left corner
+            ctx.closePath();
+            ctx.stroke();
+        }
+
+        // Initial setup
+        resizeCanvas();
+
+        // Listen for window resize events to adjust canvas size
+        window.addEventListener('resize', resizeCanvas);
+    </script>
 </body>
 </html>

@@ -14,6 +14,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+    rel="stylesheet">
 
   <!-- CSS Stylesheets -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -55,6 +58,18 @@
       background-size: cover;
       background-position: center;
     } */
+
+    .left-form-box {
+      background-image: url(./images/Rectangle\ 2420.png);
+      align-items: center;
+      padding: 5%;
+      border-radius: 5%;
+    }
+
+    #footer{
+      background-image: url(./images/footer.png);
+    }
+    
   </style>
 
 </head>
@@ -454,7 +469,197 @@
   </div>
 
   <!-- Form Section -->
+  <script>
+    $(document).ready(function () {
+      $(".box-option").click(function () {
+        // Get the index of the clicked box option
+        var index = $(this).index();
+        // Hide all forms
+        $(".form-container").hide();
+        // Show the corresponding form based on the index
+        $(".form-container").eq(index).show();
+      });
+    });
+  </script>
 
+  <div class="container-fluid form-box">
+    <div class="row">
+      <!-- Left Section: Box Options -->
+      <div class="col-md-4 left-form-box">
+        <!-- Left Section: Box Options -->
+        <div class="box-option">
+          <div class="row align-items-center">
+            <!-- Add align-items-center to vertically center content -->
+            <div class="col-md-3 text-center">
+              <!-- Add text-center class to center the content -->
+              <div class="icon-container">
+                <i class="fas fa-map-marker-alt icon" style="color:#213672;"></i>
+              </div>
+            </div>
+            <div class="col-md-9" style="text-align: left;">
+              <span style="color: #424E60;">I am a</span>
+              <p style="color: #000;">Individual/ Venture Fund Investors</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="box-option">
+          <div class="row align-items-center">
+            <!-- Add align-items-center to vertically center content -->
+            <div class="col-md-3 text-center">
+              <!-- Add text-center class to center the content -->
+              <div class="icon-container">
+                <i class="fas fa-map-marker-alt icon" style="color:#213672;"></i>
+              </div>
+            </div>
+            <div class="col-md-9" style="text-align: left;">
+              <span style="color: #424E60;">I am a</span>
+              <p style="color: #000;">Startup Founder/ Deal Scouter/ Investment Bankers</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="box-option">
+          <div class="row align-items-center">
+            <!-- Add align-items-center to vertically center content -->
+            <div class="col-md-3 text-center">
+              <!-- Add text-center class to center the content -->
+              <div class="icon-container">
+                <i class="fas fa-map-marker-alt icon" style="color:#213672;"></i>
+              </div>
+            </div>
+            <div class="col-md-9" style="text-align: left;">
+              <span style="color: #424E60;">I am a</span>
+              <p style="color: #000;">Ecosystem Partner-Incubator/ Accelerator/State Government/ Service Provider</p>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+      <!-- Right Section: Form Container -->
+      <div class="col-md-8">
+        <div class="form-container form-text">
+          <!-- Form for Option 1 -->
+          <form>
+            <h4>Together we can bring lot of values for each other - Induckt's Founder</h4>
+            <div class="form-group">
+              <input type="text" class="form-control" id="input1" placeholder="Name*" />
+              <div class="line"></div> <!-- Horizontal line -->
+
+              <select class="form-control" id="organizationType">
+                <option value="">Type*</option>
+                <option value="option1">Individual</option>
+                <option value="option2">Venture Capital Fund</option>
+                <option value="option3">Family House</option>
+                <option value="option4">Angel Syndicate</option>
+              </select>
+              <div class="line"></div> <!-- Horizontal line -->
+
+              <input type="text" class="form-control" id="input1" placeholder="Designation" />
+              <div class="line"></div> <!-- Horizontal line -->
+
+              <input type="text" class="form-control" id="input1" placeholder="Linkedin URL*" />
+              <div class="line"></div> <!-- Horizontal line -->
+
+              <input type="text" class="form-control" id="input1" placeholder="Website URL" />
+              <div class="line"></div> <!-- Horizontal line -->
+
+              <input type="tel" class="form-control" id="input1" maxlength="10" placeholder="Mobile no*">
+              <div class="line"></div> <!-- Horizontal line -->
+
+              <input type="email" class="form-control" id="input1" placeholder="Email ID*" />
+              <div class="line"></div> <!-- Horizontal line -->
+
+              <input type="text" class="form-control" id="input1" placeholder="Preferred Mode Of Investment" />
+              <div class="line"></div> <!-- Horizontal line -->
+
+            </div>
+
+            <button type="submit" class="btn px-4 py-2 form-submit-button"> Submit
+              <span class="material-symbols-outlined" style="padding-left: 10%;"> send </span>
+            </button>
+
+            <!-- Add more form fields here as needed -->
+          </form>
+        </div>
+        <div class="form-container form-text" style="display:none;">
+          <!-- Form for Option 2 -->
+          <form>
+            <h4>Together we can bring lot of values for each other - Induckt's Founder</h4>
+            <div class="form-group">
+              <input type="text" class="form-control" id="input1" placeholder="Name*" />
+              <div class="line"></div> <!-- Horizontal line -->
+
+              <select class="form-control" id="organizationType">
+                <option value="">Type*</option>
+                <option value="option1">Founder</option>
+                <option value="option2">Investment Banker</option>
+                <option value="option3">Deal Scouter</option>
+              </select>
+              <div class="line"></div> <!-- Horizontal line -->
+
+              <input type="text" class="form-control" id="input1" placeholder="Linkedin URL*" />
+              <div class="line"></div> <!-- Horizontal line -->
+
+              <input type="tel" class="form-control" id="input1" maxlength="10" placeholder="Mobile no*">
+              <div class="line"></div> <!-- Horizontal line -->
+
+              <input type="email" class="form-control" id="input1" placeholder="Email ID*" />
+              <div class="line"></div> <!-- Horizontal line -->
+
+              <input type="text" class="form-control" id="input1" placeholder="Preferred Mode Of Investment" />
+              <div class="line"></div> <!-- Horizontal line -->
+            </div>
+
+            <button type="submit" class="btn px-4 py-2 form-submit-button"> Submit
+              <span class="material-symbols-outlined" style="padding-left: 10%;"> send </span>
+            </button>
+
+            <!-- Add more form fields here as needed -->
+          </form>
+        </div>
+        <div class="form-container form-text" style="display:none;">
+          <!-- Form for Option 3 -->
+          <form>
+            <h4>Together we can bring lot of values for each other - Induckt's Founder</h4>
+            <div class="form-group">
+              <input type="text" class="form-control" id="input1" placeholder="Name*" />
+              <div class="line"></div> <!-- Horizontal line -->
+
+              <select class="form-control" id="organizationType">
+                <option value="">Select Organization Type</option>
+                <option value="option1">Incubator</option>
+                <option value="option2">Accelerator</option>
+                <option value="option3">Service Provider</option>
+                <option value="option4">State Government</option>
+              </select>
+              <div class="line"></div> <!-- Horizontal line -->
+
+              <input type="text" class="form-control" id="input1" placeholder="Linkedin URL*" />
+              <div class="line"></div> <!-- Horizontal line -->
+
+              <input type="tel" class="form-control" id="input1" maxlength="10" placeholder="Mobile no*">
+              <div class="line"></div> <!-- Horizontal line -->
+
+              <input type="email" class="form-control" id="input1" placeholder="Email ID*" />
+              <div class="line"></div> <!-- Horizontal line -->
+
+              <input type="text" class="form-control" id="input1" placeholder="Preferred Mode Of Investment" />
+              <div class="line"></div> <!-- Horizontal line -->
+            </div>
+
+            <button type="submit" class="btn px-4 py-2 form-submit-button"> Submit
+              <span class="material-symbols-outlined" style="padding-left: 10%;"> send </span>
+            </button>
+
+            <!-- Add more form fields here as needed -->
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Call to Action -->
 
@@ -962,10 +1167,206 @@
     </div>
   </div>
 
+
+  <!-- Partners -->
+
+  <div>
+    <h1 class="partner-heading">Partners</h1>
+    <img class="logic-gate-child" alt="" src="./images/icons/vector-5.svg">
+
+    <div class="partner-text">
+      <h2><strong>We work with over 279+ investors all over the world.</strong></h2>
+      <p>Suspendisse eget ultricies felis, in lacinia lectus. Morbi accumsan dapibus tortor, in fermentum odio malesuada
+        in aliquam sed ipsum tristique.</p>
+    </div>
+
+    <div class="partners-container" style="background-image: url(./images/partner.png);">
+    </div>
+  </div>
+
+
+  <!-- Earth Globe  -->
+
+  <section class="colored-section globe-cards" id="cta" style="margin-top: 10%;">
+    <div class="container-fluid">
+      <div class="row">
+        <!-- First image column -->
+        <div class="col-md-6 earth-globe-left ">
+          <p class="earth-globe-description">Induckt Knowledge</p>
+          <h3 class="earth-globe-text"> Let our world of knowledge be your trusted guide. </h3>
+          <p class="earth-globe-description">With a relentless commitment to excellence and a forward-thinking approach,
+            we empower investors to achieve their financial goals and secure their future. Join us on this journey
+            towards financial success and discover the difference of partnering with a truly dynamic and visionary firm.
+          </p>
+        </div>
+
+        <!-- Second image (video) column -->
+        <div class="col-md-6">
+          <div class="globe-container">
+            <canvas class="globe-canvas"></canvas>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- New section with dark background -->
+      <div class="div-col-span-12-wrapper">
+        <div class="div-col-span-12">
+          <div class="div-relative">
+            <div class="div-h-full"></div>
+            <img class="div-relative-icon2" loading="lazy" alt="" src="./images/div-relative-2@2x.png">
+          </div>
+          <div class="div-relative1">
+            <div class="div-h-full1"></div>
+            <img class="div-relative-icon3" loading="lazy" alt="" src="./images/div-relative-3@2x.png">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Live Events & Show -->
+
+  <div class="container-fluid even-heading">
+    <div class="title-story-parent">
+      <h1 class="title-story">Live Events & Show</h1>
+      <img class="logic-gate-child" alt="" src="./images/icons/vector-5.svg">
+    </div>
+  </div>
+
+  <div class="container-fluid event" style="margin-top: -7%;">
+    <h1 style="color: white; text-align: left; font-family: 'JetBrains Mono', monospace;">Latest Event & Show</h1>
+    <div class="divider"></div>
+
+    <div class="row">
+      <div class="col-md-6" style="padding-bottom: 2%;">
+        <p style="color: white; text-align: left;"> Donec suscipit dictum risus sed dignissim. Fusce ex leo, lobortis
+          sed ullamcorper in, rutrum eu enim. </p>
+      </div>
+
+      <div class="col-md-6">
+        <div class="even-arrow-section">
+          <button class="even-arrow-circle" id="prevBtn">
+            <i class="fas fa-arrow-left even-arrow"></i>
+          </button>
+          <button class="even-arrow-circle even-arrow" id="nextBtn">
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-5 even-box" style="margin-right: 3%;">
+        <!-- Added margin-right -->
+        <p>
+          <i class="far fa-calendar" style="color: #1777E5;"></i> <span>8 Sep,2020</span>
+          <i class="fas fa-map-marker-alt" style="color: #1777E5;"></i> <span>Place</span>
+        </p>
+        <h4 style="text-align: left;">BMA Events</h4 style="text-align: left;">
+        <p> Quisque vitae ante dolor. Duis vehicula purus eget libero interdum ornare. Vestibulum ut risus nec odio
+          rhoncus malesuada. Duis lobortis consectetur magna, in faucibus mauris congue tempor.</p>
+      </div>
+
+      <div class="col-md-5 even-box">
+        <p>
+          <i class="far fa-calendar" style="color: #1777E5;"></i> <span>8 Sep,2020</span>
+          <i class="fas fa-map-marker-alt" style="color: #1777E5;"></i> <span>Place</span>
+        </p>
+        <h4 style="text-align: left;">Seed Fund Event - 2024</h4 style="text-align: left;">
+        <p> Quisque vitae ante dolor. Duis vehicula purus eget libero interdum ornare. Vestibulum ut risus nec odio
+          rhoncus malesuada. Duis lobortis consectetur magna, in faucibus mauris congue tempor.</p>
+      </div>
+
+      <div class="col-md-5 even-box" style="margin-right: 3%;">
+        <!-- Added margin-right -->
+        <p>
+          <i class="far fa-calendar" style="color: #1777E5;"></i> <span>8 Sep,2020</span>
+          <i class="fas fa-map-marker-alt" style="color: #1777E5;"></i> <span>Place</span>
+        </p>
+        <h4 style="text-align: left;">BMA Events Part-2</h4 style="text-align: left;">
+        <p> Quisque vitae ante dolor. Duis vehicula purus eget libero interdum ornare. Vestibulum ut risus nec odio
+          rhoncus malesuada. Duis lobortis consectetur magna, in faucibus mauris congue tempor.</p>
+      </div>
+
+      <div class="col-md-5 even-box">
+        <p>
+          <i class="far fa-calendar" style="color: #1777E5;"></i> <span>8 Sep,2020</span>
+          <i class="fas fa-map-marker-alt" style="color: #1777E5;"></i> <span>Place</span>
+        </p>
+        <h4 style="text-align: left;">Seed Fund Event - 2024 Part-2</h4 style="text-align: left;">
+        <p> Quisque vitae ante dolor. Duis vehicula purus eget libero interdum ornare. Vestibulum ut risus nec odio
+          rhoncus malesuada. Duis lobortis consectetur magna, in faucibus mauris congue tempor.</p>
+      </div>
+
+      <div class="col-md-5 even-box" style="margin-right: 3%;">
+        <!-- Added margin-right -->
+        <p>
+          <i class="far fa-calendar" style="color: #1777E5;"></i> <span>8 Sep,2020</span>
+          <i class="fas fa-map-marker-alt" style="color: #1777E5;"></i> <span>Place</span>
+        </p>
+        <h4 style="text-align: left;">BMA Events Part-3</h4 style="text-align: left;">
+        <p> Quisque vitae ante dolor. Duis vehicula purus eget libero interdum ornare. Vestibulum ut risus nec odio
+          rhoncus malesuada. Duis lobortis consectetur magna, in faucibus mauris congue tempor.</p>
+      </div>
+
+      <div class="col-md-5 even-box">
+        <p>
+          <i class="far fa-calendar" style="color: #1777E5;"></i> <span>8 Sep,2020</span>
+          <i class="fas fa-map-marker-alt" style="color: #1777E5;"></i> <span>Place</span>
+        </p>
+        <h4 style="text-align: left;">Seed Fund Event - 2024 Part-3</h4 style="text-align: left;">
+        <p> Quisque vitae ante dolor. Duis vehicula purus eget libero interdum ornare. Vestibulum ut risus nec odio
+          rhoncus malesuada. Duis lobortis consectetur magna, in faucibus mauris congue tempor.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const boxContainers = document.querySelectorAll('.row > .even-box');
+      const prevBtn = document.getElementById('prevBtn');
+      const nextBtn = document.getElementById('nextBtn');
+      const boxCount = boxContainers.length;
+      let currentIndex = 0;
+
+      function showBoxes() {
+        boxContainers.forEach(function (box, index) {
+          if (index >= currentIndex && index < currentIndex + 2) {
+            box.style.display = 'block'; // Show boxes within currentIndex and currentIndex + 2
+          } else {
+            box.style.display = 'none'; // Hide other boxes
+          }
+        });
+      }
+
+      showBoxes();
+
+      prevBtn.addEventListener('click', function () {
+        if (currentIndex > 0) {
+          currentIndex -= 2;
+          showBoxes();
+        }
+      });
+
+      nextBtn.addEventListener('click', function () {
+        if (currentIndex + 2 < boxCount) {
+          currentIndex += 2;
+          showBoxes();
+        }
+      });
+    });
+  </script>
+
+
+
   <!-- Blog Section -->
 
-  <section style="margin-top: -5%;">
-    <div class="title-story-parent">
+  <section class="blog" style="margin-top: -5%; ">
+    <div class="title-story-parent" style="margin-top: 5%; padding-top: 10%;">
       <h1 class="title-story">Blogs</h1>
       <img class="logic-gate-child" alt="" src="./images/icons/vector-5.svg">
     </div>
@@ -1107,19 +1508,103 @@
   </section>
 
 
-
-
   <!-- Footer -->
 
-  <footer class="white-section" id="footer">
-    <div class="container-fluid">
-      <i class="social-icon fab fa-facebook-f"></i>
-      <i class="social-icon fab fa-twitter"></i>
-      <i class="social-icon fab fa-instagram"></i>
-      <i class="social-icon fas fa-envelope"></i>
-      <p>© Copyright 2024 Induckt</p>
+  <footer id="footer" style="margin-top: 5%;">
+    <div class="row">
+      <div class="col-md-6 footer-left">
+        <img src="./images/logo-footer.png" alt="Logo">
+        <p>Induckt Global is redefining the landscape of asset management. With a commitment to excellence and a focus
+          on client success, we leverage expertise and innovation to navigate global markets, optimize portfolios, and
+          secure long-term financial growth.</p>
+      </div>
+      <div class="col-md-6 footer-right">
+        <h4>Sign up to get Induckt Global's newsletter delivered to your Inbox.</h4>
+        <div class="subscribe-form">
+          <input type="email" class="email-input" placeholder="Enter your email...">
+          <button type="submit" class="subscribe-button">Subscribe</button>
+        </div>
+      </div>
+    </div><br>
+
+    <div class="row">
+      <div class="col-md-2">
+        <div class="footer-icons">
+          <div class="row-container">
+            <div class="circle-container">
+              <a href="https://www.facebook.com">
+                <svg class="svg-content" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                  <path
+                    d="M279.1 288l14.2-92.7h-88.9v-60.1c0-25.4 12.4-50.1 52.2-50.1h40.4V6.3S260.4 0 225.4 0c-73.2 0-121.1 44.4-121.1 124.7v70.6H22.9V288h81.4v224h100.2V288z" />
+                </svg>
+              </a>
+            </div>
+
+            <div class="circle-container">
+              <a href="https://www.instagram.com">
+                <svg class="svg-content" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <path
+                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                </svg>
+              </a>
+            </div>
+
+            <div class="circle-container">
+              <a href="https://www.linkedin.com">
+                <svg class="svg-content" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <path
+                    d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    <div class="col-md-10">
+        <div class="row justify-content-end">
+          
+            <div class="col-md-2 ps-2 footer-menu"><a href="#" style="display: flex; text-decoration: none;"><span>Home</span></a></div>
+
+            <div class="col-md-2 ps-2 footer-menu">
+                <a href="#" style="display: flex; text-decoration: none;">
+                    <span>Acceleration</span>
+                    <span class="material-symbols-outlined" style="margin-left: 5px; color:#0FBE21;">arrow_outward</span>
+                </a>
+            </div>
+
+            <div class="col-md-2 ps-2 footer-menu">
+                <a href="#" style="display: flex; text-decoration: none;">
+                    <span>Visionfund</span>
+                    <span class="material-symbols-outlined" style="margin-left: 5px; color:#0FBE21;">arrow_outward</span>
+                </a>
+            </div>
+
+            <div class="col-md-2 ps-2 footer-menu">
+                <a href="#" style="display: flex; text-decoration: none;">
+                    <span>Traction Angel Investors Platform</span>
+                    <span class="material-symbols-outlined" style="margin-left: 5px; color:#0FBE21;">arrow_outward</span>
+                </a>
+            </div>
+          
+            <div class="col-md-2 ps-2 footer-menu"><a href="#" style="display: flex; text-decoration: none;"><span>Get in touch</span></a></div>
+            <div class="col-md-2 ps-2 footer-menu"><a href="#" style="display: flex; text-decoration: none;"><span>FAQs</span></a></div>
+
+        </div>
     </div>
+    
+    
+    
+    </div>
+
   </footer>
+
+  <div class="footer-bottom">
+    <hr style="border-top: 1px solid white;">
+    <p style="color: white;">Induckt Global @2024</p>
+  </div>
+
+
 
   <script>
     // JavaScript to detect macOS and apply specific CSS class
@@ -1127,6 +1612,10 @@
       document.documentElement.classList.add('mac-os');
     }
   </script>
+
+  <script src="./js/form.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="./js/earth-globe.js"></script>
 
 
 </body>
