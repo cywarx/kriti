@@ -6,6 +6,7 @@
   <title>INDUCKT</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
@@ -22,11 +23,14 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/navbar.css">
 
   <!-- Font Awesome -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Plus Jakarta Sans:ital,wght@1,800&display=swap" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 
   <!-- Bootstrap Scripts -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -66,10 +70,9 @@
       border-radius: 5%;
     }
 
-    #footer{
+    #footer {
       background-image: url(./images/footer.png);
     }
-    
   </style>
 
 </head>
@@ -80,26 +83,89 @@
 
     <div class="container-fluid">
 
-      <!-- Nav Bar -->
-
       <nav class="navbar navbar-dark">
         <img class="navbar-brand" src="./images/logo.png" alt="">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#footer">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#pricing">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#cta">Download</a>
-            </li>
-          </ul>
+        <div id="overlay"></div>
+        <div class="btn-container">
+          <div class="btn-items">
+            <svg class="svg-inline--fa fa-bars fa-w-14 fa-2x" aria-hidden="true" data-prefix="fas" data-icon="bars"
+              role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+              <path fill="currentColor"
+                d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+              </path>
+            </svg>
+
+          </div>
         </div>
+        <div class="container">
+          <div class="menu-container">
+            <div class="row">
+              <div class="col-md-9">
+                <span style="display: flex; align-items: center;">
+                  <i class="fas fa-user" style="color: red; font-size: 24px; margin-right: 5px;"></i>
+                  <a href="#" style="text-decoration: none; color: #000; padding-left: 15%; font-size: 18px;">Team</a>
+                </span>
+              </div>
+              <div class="col-md-3 d-flex justify-content-end align-items-center">
+                <span class="material-symbols-outlined" style="color:#1D68F4; font-size: 24px;">
+                  arrow_forward
+                </span>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-9">
+                <span style="display: flex; align-items: center;">
+                  <i class="fas fa-bullseye" style="color: red; font-size: 24px; margin-right: 5px;"></i>
+                  <a href="#" style="text-decoration: none; color: #000; padding-left: 15%; font-size: 18px;">Startup
+                    Login</a>
+                </span>
+              </div>
+              <div class="col-md-3 d-flex justify-content-end align-items-center">
+                <span class="material-symbols-outlined" style="color:#1D68F4; font-size: 24px;">
+                  arrow_forward
+                </span>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-9">
+                <span style="display: flex; align-items: center;">
+                  <i class="fas fa-briefcase" style="color: red; font-size: 24px; margin-right: 5px;"></i>
+                  <a href="#" style="text-decoration: none; color: #000; padding-left: 15%; font-size: 18px;">Investor
+                    Login</a>
+                </span>
+              </div>
+              <div class="col-md-3 d-flex justify-content-end align-items-center">
+                <span class="material-symbols-outlined" style="color:#1D68F4; font-size: 24px;">
+                  arrow_forward
+                </span>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-9">
+                <span style="display: flex; align-items: center;">
+                  <i class="fas fa-user-circle" style="color: red; font-size: 24px; margin-right: 5px;"></i>
+                  <a href="#" style="text-decoration: none; color: #000; padding-left: 15%; font-size: 18px;">Ecosystem
+                    Partner</a>
+                </span>
+              </div>
+              <div class="col-md-3 d-flex justify-content-end align-items-center">
+                <span class="material-symbols-outlined" style="color:#1D68F4; font-size: 24px;">
+                  arrow_forward
+                </span>
+              </div>
+            </div>
+            <em></em>
+          </div>
+        </div>
+
+
+
+
+
+
       </nav>
 
 
@@ -1560,41 +1626,44 @@
           </div>
         </div>
       </div>
-    
-    <div class="col-md-10">
+
+      <div class="col-md-10">
         <div class="row justify-content-end">
-          
-            <div class="col-md-2 ps-2 footer-menu"><a href="#" style="display: flex; text-decoration: none;"><span>Home</span></a></div>
 
-            <div class="col-md-2 ps-2 footer-menu">
-                <a href="#" style="display: flex; text-decoration: none;">
-                    <span>Acceleration</span>
-                    <span class="material-symbols-outlined" style="margin-left: 5px; color:#0FBE21;">arrow_outward</span>
-                </a>
-            </div>
+          <div class="col-md-2 ps-2 footer-menu"><a href="#"
+              style="display: flex; text-decoration: none;"><span>Home</span></a></div>
 
-            <div class="col-md-2 ps-2 footer-menu">
-                <a href="#" style="display: flex; text-decoration: none;">
-                    <span>Visionfund</span>
-                    <span class="material-symbols-outlined" style="margin-left: 5px; color:#0FBE21;">arrow_outward</span>
-                </a>
-            </div>
+          <div class="col-md-2 ps-2 footer-menu">
+            <a href="#" style="display: flex; text-decoration: none;">
+              <span>Acceleration</span>
+              <span class="material-symbols-outlined" style="margin-left: 5px; color:#0FBE21;">arrow_outward</span>
+            </a>
+          </div>
 
-            <div class="col-md-2 ps-2 footer-menu">
-                <a href="#" style="display: flex; text-decoration: none;">
-                    <span>Traction Angel Investors Platform</span>
-                    <span class="material-symbols-outlined" style="margin-left: 5px; color:#0FBE21;">arrow_outward</span>
-                </a>
-            </div>
-          
-            <div class="col-md-2 ps-2 footer-menu"><a href="#" style="display: flex; text-decoration: none;"><span>Get in touch</span></a></div>
-            <div class="col-md-2 ps-2 footer-menu"><a href="#" style="display: flex; text-decoration: none;"><span>FAQs</span></a></div>
+          <div class="col-md-2 ps-2 footer-menu">
+            <a href="#" style="display: flex; text-decoration: none;">
+              <span>Visionfund</span>
+              <span class="material-symbols-outlined" style="margin-left: 5px; color:#0FBE21;">arrow_outward</span>
+            </a>
+          </div>
+
+          <div class="col-md-2 ps-2 footer-menu">
+            <a href="#" style="display: flex; text-decoration: none;">
+              <span>Traction Angel Investors Platform</span>
+              <span class="material-symbols-outlined" style="margin-left: 5px; color:#0FBE21;">arrow_outward</span>
+            </a>
+          </div>
+
+          <div class="col-md-2 ps-2 footer-menu"><a href="#" style="display: flex; text-decoration: none;"><span>Get in
+                touch</span></a></div>
+          <div class="col-md-2 ps-2 footer-menu"><a href="#"
+              style="display: flex; text-decoration: none;"><span>FAQs</span></a></div>
 
         </div>
-    </div>
-    
-    
-    
+      </div>
+
+
+
     </div>
 
   </footer>
@@ -1616,6 +1685,7 @@
   <script src="./js/form.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
   <script src="./js/earth-globe.js"></script>
+  <script src="js/navbar.js"></script>
 
 
 </body>
