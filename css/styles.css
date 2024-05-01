@@ -554,6 +554,7 @@ p {
 
 .smaller-image {
   max-width: 70%;
+  height: 300px;
   /* Adjust the percentage as needed */
   max-height: auto;
 }
@@ -628,6 +629,7 @@ p {
 
 .smaller-image {
   max-width: 70%;
+  height: 300px;
   /* Adjust the percentage as needed */
   max-height: auto;
 }
@@ -1202,14 +1204,9 @@ p {
 }
 
 
-
 /* ======== || MOBILE SCREEN || ========== */
 
 @media (max-width: 1028px) {
-
-  html, body {
-    overflow-x: hidden; /* This prevents horizontal scrolling */
-}
 
   #title {
     background-repeat: repeat;
