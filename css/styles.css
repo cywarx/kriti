@@ -1,6 +1,6 @@
 body {
   /* font-family: "Montserrat"; */
-  font-family: "Outfit", sans-serif;
+  font-family: "Poppins", sans-serif; 
   text-align: center;
   overflow-x: hidden;
 }
@@ -11,11 +11,18 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat-Bold";
+  font-family: "public-sans", sans-serif;
 }
 
 p {
   color: #8f8f8f;
+}
+
+
+.carousel-indicators {
+ 
+  bottom: -50px;
+
 }
 
 /* -------------------------------- */
@@ -40,6 +47,7 @@ p {
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   /* Increased shadow on hover */
   transform: translateY(-5px);
+  /* padding-bottom: 25%; */
 }
 
 .card::before {
@@ -63,6 +71,7 @@ p {
   opacity: 0.7;
   /* Keep opacity at 0.7 even on hover */
 }
+
 
 .card-body {
   height: 100%;
@@ -90,9 +99,10 @@ p {
   text-align: left;
 }
 
+
 .card-link {
-  font-family: "Montserrat-Black";
-  font-weight: 800;
+  font-family: "Poppins", sans-serif; 
+   font-weight: 800;
   color: white;
   font-size: 2rem;
   text-align: left;
@@ -102,14 +112,14 @@ p {
 /* Headings */
 
 .big-heading {
-  font-family: "Outfit", sans-serif;
+  font-family: "public-sans", sans-serif;
   font-optical-sizing: auto;
   font-size: 4rem;
   font-weight: 800;
 }
 
 .small-heading {
-  font-family: "inter", sans-serif;
+  font-family: "Poppins", sans-serif; 
   font-weight: 300;
   font-size: 1.8rem;
   padding-top: 7%;
@@ -160,7 +170,7 @@ p {
 
 .nav-link {
   font-size: 1.2rem;
-  font-family: "Montserrat-Light";
+  font-family: "Poppins", sans-serif; 
 }
 
 /* Buttons */
@@ -356,7 +366,7 @@ p {
 }
 
 .card-img-right {
-  width: auto;
+  width: 200px;
 }
 
 .card-left-line {
@@ -595,6 +605,7 @@ p {
   position: relative;
   float: left;
   border-radius: 2%;
+  /* margin-top: -7%; */
 }
 
 .dark-section .inner-section {
@@ -707,7 +718,8 @@ p {
   border: 1px solid #dee2e6;
   padding: 10px;
   margin-bottom: 10px;
-  cursor: pointer;
+  border-radius: 5%;
+  cursor: poPoppins;
   transition: background-color 0.3s;
 }
 
@@ -739,7 +751,7 @@ p {
 }
 
 .form-control {
-  font-family: "work-sans", sans-serif;
+  font-family: "public-sans", sans-serif; 
   border: none;
   border-bottom: 1px solid black;
   /* Horizontal line under the input */
@@ -816,7 +828,7 @@ p {
 /* -------------------------------- */
 
 .earth-globe-text {
-  font-family: "inter", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-size: 2.8rem;
   text-align: left;
@@ -824,7 +836,7 @@ p {
 }
 
 .earth-globe-description {
-  font-family: "inter", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-size: 1rem;
   color: white;
@@ -988,8 +1000,9 @@ p {
 /* -------------------------------- */
 
 .partner-heading {
-  font-family: "inter", sans-serif;
+  font-family: "public-sans", sans-serif; 
   text-align: center;
+  font-weight: 800;
   margin-top: 20px;
   /* Add margin for spacing */
 }
@@ -1092,7 +1105,7 @@ p {
 /* -------------------------------- */
 
 #footer {
-  font-family: "inter", sans-serif;
+  font-family: "Poppins", sans-serif;
   padding: 10%;
   margin-bottom: -5%;
   background-size: 100%;
@@ -1137,7 +1150,7 @@ p {
   color: #fff;
   border: none;
   border-radius: 0 4px 4px 0;
-  cursor: pointer;
+  cursor: poPoppins;
   font-size: 16px;
 }
 
@@ -1193,6 +1206,11 @@ p {
 /* ======== || MOBILE SCREEN || ========== */
 
 @media (max-width: 1028px) {
+
+  body {
+      overflow-x: hidden; /* This prevents horizontal scrolling */
+      width: 100vw; /* Sets the width of the body to the viewport width */
+  }
 
   #title {
     background-repeat: repeat;

@@ -51,6 +51,15 @@
       background-size: cover;
       background-position: center;
     } */
+
+    .pc1:hover{
+        padding-bottom: 25%;
+    }
+
+    .pc3:hover{
+        padding-bottom: 25%;
+    }
+
     .pc2 {
       background-image: url(./images/b2.png);
       background-size: cover;
@@ -66,9 +75,12 @@
     .left-form-box {
       background-image: url(./images/Rectangle\ 2420.png);
       align-items: center;
+      background-repeat: no-repeat;
       padding: 5%;
       border-radius: 5%;
+      background-size: 100% 100%; /* This will make the background image stretch to cover the entire element */
     }
+
 
     #footer {
       background-image: url(./images/footer.png);
@@ -147,7 +159,7 @@
               <div class="col-md-9">
                 <span style="display: flex; align-items: center;">
                   <i class="fas fa-user-circle" style="color: red; font-size: 24px; margin-right: 5px;"></i>
-                  <a href="#" style="text-decoration: none; color: #000; padding-left: 15%; font-size: 18px;">Ecosystem
+                  <a href="#" style="text-decoration: none; color: #000; padding-left: 15%; font-size: 18px; font-family:   font-family: 'public-sans', sans-serif;                  ;">Ecosystem
                     Partner</a>
                 </span>
               </div>
@@ -743,7 +755,7 @@
     <div class="container-fluid">
 
       <div class="title-story-parent">
-        <h1 class="title-story">Follow US</h1>
+        <h1 class="title-story">Follow Us</h1>
         <img class="logic-gate-child" alt="" src="./images/icons/vector-5.svg">
       </div>
 
@@ -834,20 +846,20 @@
 
   <!-- Red Banner -->
 
-  <section class="colored-section" id="cta">
+  <section class="colored-section" id="cta" style="height: 650px;">
     <div class="container-fluid" style="margin-bottom: -5%;">
       <div class="row">
         <!-- First image column -->
         <div class="col-md-6">
           <div class="image-wrapper red-img1">
-            <img src="./images/Rectangle 20.png" alt="Image 1">
+            <img src="./images/Rectangle 20.png" alt="Image 1" style="margin-top: 5%;">
           </div>
         </div>
 
         <!-- Second image (video) column -->
         <div class="col-md-6">
           <div class="image-wrapper text-center">
-            <img src="./images/unsplash_bzqU01v-G54.png" alt="Image 2" class="smaller-image">
+            <img src="./images/unsplash_bzqU01v-G54.png" alt="Image 2" class="smaller-image" style="width: 700px; max-width: 100%; ">
             <button class="play-button"><i class="fas fa-play" style="color: white;"></i></button>
           </div>
         </div>
@@ -1246,7 +1258,7 @@
         in aliquam sed ipsum tristique.</p>
     </div>
 
-    <div class="partners-container" style="background-image: url(./images/partner.png);">
+    <div class="partners-container" style="background-image: url(./images/partner.png); ">
     </div>
   </div>
 
