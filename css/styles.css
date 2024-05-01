@@ -1205,6 +1205,13 @@ p {
 
 /* ======== || MOBILE SCREEN || ========== */
 
+@media (max-width: 767px) {
+  body {
+      overflow-x: hidden; /* This prevents horizontal scrolling */
+      width: 100vw; /* Sets the width of the body to the viewport width */
+  }
+}
+
 @media (max-width: 1028px) {
 
     body {
