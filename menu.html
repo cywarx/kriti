@@ -1,43 +1,79 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Navbar</title>
-  <!-- Link Font Awesome CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <!-- Link your CSS file -->
-  <link rel="stylesheet" href="css/navbar.css">
-  <link rel="stylesheet" href="css/styles.css">
+<nav class="navbar navbar-dark">
+  <img class="navbar-brand" src="./images/logo.png" alt="">
+  <div id="overlay"></div>
+  <div class="btn-container">
+    <div class="btn-items">
+      <svg class="svg-inline--fa fa-bars fa-w-14 fa-2x" aria-hidden="true" data-prefix="fas" data-icon="bars"
+        role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+        <path fill="currentColor"
+          d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+        </path>
+      </svg>
 
-</head>
-<body style="background-color: antiquewhite;">
-
-    <nav class="navbar navbar-dark">
-        <img class="navbar-brand" src="./images/logo.png" alt="">
-        <div id="overlay"></div>
-        <div class="btn-container">
-          <div class="btn-items">
-            <svg class="svg-inline--fa fa-bars fa-w-14 fa-2x" aria-hidden="true" data-prefix="fas" data-icon="bars" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
-              <path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
-              </path>
-            </svg>
-            
-          </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="menu-container">
+      <div class="row">
+        <div class="col-md-9">
+          <span style="display: flex; align-items: center;">
+            <i class="fas fa-user" style="color: red; font-size: 24px; margin-right: 5px;"></i>
+            <a href="#" style="text-decoration: none; color: #000; padding-left: 15%; font-size: 18px;">Team</a>
+          </span>
         </div>
-        <div class="menu-container">
-            <a href=""><i class="fas fa-home"></i> HOME</a>
-            <a href=""><i class="fas fa-cogs"></i> SERVICES</a>
-            <a href=""><i class="fas fa-clipboard-list"></i> OTHER SERVICES</a>
-            <a href=""><i class="fas fa-info-circle"></i> ABOUT US</a>
-            <a href=""><i class="fas fa-envelope"></i> CONTACT US</a>
-            <a href=""><i class="fas fa-rss"></i> BLOG</a>
-            <span></span>
+        <div class="col-md-3 d-flex justify-content-end align-items-center">
+          <span class="material-symbols-outlined" style="color:#1D68F4; font-size: 24px;">
+            arrow_forward
+          </span>
         </div>
-          
-    </nav>
+      </div>
 
-<!-- Link your JS file -->
-<script src="js/navbar.js"></script>
-</body>
-</html>
+      <div class="row">
+        <div class="col-md-9">
+          <span style="display: flex; align-items: center;">
+            <i class="fas fa-bullseye" style="color: red; font-size: 24px; margin-right: 5px;"></i>
+            <a href="#" style="text-decoration: none; color: #000; padding-left: 15%; font-size: 18px;">Startup
+              Login</a>
+          </span>
+        </div>
+        <div class="col-md-3 d-flex justify-content-end align-items-center">
+          <span class="material-symbols-outlined" style="color:#1D68F4; font-size: 24px;">
+            arrow_forward
+          </span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-9">
+          <span style="display: flex; align-items: center;">
+            <i class="fas fa-briefcase" style="color: red; font-size: 24px; margin-right: 5px;"></i>
+            <a href="#" style="text-decoration: none; color: #000; padding-left: 15%; font-size: 18px;">Investor
+              Login</a>
+          </span>
+        </div>
+        <div class="col-md-3 d-flex justify-content-end align-items-center">
+          <span class="material-symbols-outlined" style="color:#1D68F4; font-size: 24px;">
+            arrow_forward
+          </span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-9">
+          <span style="display: flex; align-items: center;">
+            <i class="fas fa-user-circle" style="color: red; font-size: 24px; margin-right: 5px;"></i>
+            <a href="#" style="text-decoration: none; color: #000; padding-left: 15%; font-size: 18px; font-family:   font-family: 'public-sans', sans-serif;                  ;">Ecosystem
+              Partner</a>
+          </span>
+        </div>
+        <div class="col-md-3 d-flex justify-content-end align-items-center">
+          <span class="material-symbols-outlined" style="color:#1D68F4; font-size: 24px;">
+            arrow_forward
+          </span>
+        </div>
+      </div>
+      <em></em>
+    </div>
+  </div>
+
+</nav>

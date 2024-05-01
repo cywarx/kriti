@@ -52,12 +52,12 @@
       background-position: center;
     } */
 
-    .pc1:hover{
-        padding-bottom: 25%;
+    .pc1:hover {
+      padding-bottom: 25%;
     }
 
-    .pc3:hover{
-        padding-bottom: 25%;
+    .pc3:hover {
+      padding-bottom: 25%;
     }
 
     .pc2 {
@@ -78,7 +78,8 @@
       background-repeat: no-repeat;
       padding: 5%;
       border-radius: 5%;
-      background-size: 100% 100%; /* This will make the background image stretch to cover the entire element */
+      background-size: 100% 100%;
+      /* This will make the background image stretch to cover the entire element */
     }
 
 
@@ -87,8 +88,11 @@
     }
 
     @media (max-width: 767px) {
-      html, body {
-          overflow-x: hidden; /* This prevents horizontal scrolling */
+
+      html,
+      body {
+        overflow-x: hidden;
+        /* This prevents horizontal scrolling */
       }
     }
   </style>
@@ -101,6 +105,40 @@
 
     <div class="container-fluid">
 
+
+      <style>
+        @media (max-width: 768px) {
+
+          /* Adjust styles for smaller screens */
+          .navbar-brand {
+            /* Adjust size of logo */
+            max-width: 100px;
+          }
+
+          .btn-items svg {
+            /* Adjust size of bars icon */
+            font-size: 16px;
+          }
+
+          .menu-container .row {
+            /* Adjust spacing or size for menu items */
+            padding: 5px;
+          }
+
+          .menu-container .col-md-9 {
+            /* Adjust width or alignment for menu item content */
+            width: 70%;
+          }
+
+          .menu-container .col-md-3 {
+            /* Adjust width or alignment for menu item arrows */
+            width: 30%;
+          }
+
+          /* Adjust other styles as needed */
+        }
+      </style>
+
       <nav class="navbar navbar-dark">
         <img class="navbar-brand" src="./images/logo.png" alt="">
         <div id="overlay"></div>
@@ -112,7 +150,6 @@
                 d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
               </path>
             </svg>
-
           </div>
         </div>
         <div class="container">
@@ -120,12 +157,28 @@
             <div class="row">
               <div class="col-md-9">
                 <span style="display: flex; align-items: center;">
-                  <i class="fas fa-user" style="color: red; font-size: 24px; margin-right: 5px;"></i>
-                  <a href="#" style="text-decoration: none; color: #000; padding-left: 15%; font-size: 18px;">Team</a>
+                  <i class="fas fa-user" style="color: red; font-size: 16px; margin-right: 5px;"></i>
+                  <a href="#" style="text-decoration: none; color: #000; font-size: 14px;">Team</a>
                 </span>
               </div>
               <div class="col-md-3 d-flex justify-content-end align-items-center">
-                <span class="material-symbols-outlined" style="color:#1D68F4; font-size: 24px;">
+                <span class="material-symbols-outlined" style="color:#1D68F4; font-size: 16px;">
+                  arrow_forward
+                </span>
+              </div>
+            </div>
+
+            <!-- Repeat similar structure for other menu items -->
+
+            <div class="row">
+              <div class="col-md-9">
+                <span style="display: flex; align-items: center;">
+                  <i class="fas fa-bullseye" style="color: red; font-size: 16px; margin-right: 5px;"></i>
+                  <a href="#" style="text-decoration: none; color: #000; font-size: 14px;">Startup Login</a>
+                </span>
+              </div>
+              <div class="col-md-3 d-flex justify-content-end align-items-center">
+                <span class="material-symbols-outlined" style="color:#1D68F4; font-size: 16px;">
                   arrow_forward
                 </span>
               </div>
@@ -134,13 +187,12 @@
             <div class="row">
               <div class="col-md-9">
                 <span style="display: flex; align-items: center;">
-                  <i class="fas fa-bullseye" style="color: red; font-size: 24px; margin-right: 5px;"></i>
-                  <a href="#" style="text-decoration: none; color: #000; padding-left: 15%; font-size: 18px;">Startup
-                    Login</a>
+                  <i class="fas fa-briefcase" style="color: red; font-size: 16px; margin-right: 5px;"></i>
+                  <a href="#" style="text-decoration: none; color: #000; font-size: 14px;">Investor Login</a>
                 </span>
               </div>
               <div class="col-md-3 d-flex justify-content-end align-items-center">
-                <span class="material-symbols-outlined" style="color:#1D68F4; font-size: 24px;">
+                <span class="material-symbols-outlined" style="color:#1D68F4; font-size: 16px;">
                   arrow_forward
                 </span>
               </div>
@@ -149,42 +201,21 @@
             <div class="row">
               <div class="col-md-9">
                 <span style="display: flex; align-items: center;">
-                  <i class="fas fa-briefcase" style="color: red; font-size: 24px; margin-right: 5px;"></i>
-                  <a href="#" style="text-decoration: none; color: #000; padding-left: 15%; font-size: 18px;">Investor
-                    Login</a>
+                  <i class="fas fa-user-circle" style="color: red; font-size: 16px; margin-right: 5px;"></i>
+                  <a href="#" style="text-decoration: none; color: #000; font-size: 14px;">Ecosystem Partner</a>
                 </span>
               </div>
               <div class="col-md-3 d-flex justify-content-end align-items-center">
-                <span class="material-symbols-outlined" style="color:#1D68F4; font-size: 24px;">
+                <span class="material-symbols-outlined" style="color:#1D68F4; font-size: 16px;">
                   arrow_forward
                 </span>
               </div>
             </div>
 
-            <div class="row">
-              <div class="col-md-9">
-                <span style="display: flex; align-items: center;">
-                  <i class="fas fa-user-circle" style="color: red; font-size: 24px; margin-right: 5px;"></i>
-                  <a href="#" style="text-decoration: none; color: #000; padding-left: 15%; font-size: 18px; font-family:   font-family: 'public-sans', sans-serif;                  ;">Ecosystem
-                    Partner</a>
-                </span>
-              </div>
-              <div class="col-md-3 d-flex justify-content-end align-items-center">
-                <span class="material-symbols-outlined" style="color:#1D68F4; font-size: 24px;">
-                  arrow_forward
-                </span>
-              </div>
-            </div>
-            <em></em>
           </div>
         </div>
-
-
-
-
-
-
       </nav>
+
 
 
       <!-- Title -->
