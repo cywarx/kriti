@@ -1216,7 +1216,7 @@ p {
 
     body {
         overflow-x: hidden; /* This prevents horizontal scrolling */
-        width: 100vw; /* Sets the width of the body to the viewport width */
+        /* width: 100vw;  */
     }
 
   #title {
