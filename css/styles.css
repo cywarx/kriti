@@ -3,6 +3,9 @@ body {
   font-family: "Poppins", sans-serif; 
   text-align: center;
   overflow-x: hidden;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
 }
 
 h1,
@@ -1048,6 +1051,7 @@ p {
   font-family: "JetBrains Mono", monospace;
   /* Apply JetBrains Mono font to the entire section */
   font-optical-sizing: auto;
+  padding-left: 22%;
   position: relative;
   z-index: 1;
   background: linear-gradient(135deg, #061543 0%, #122D7D 42%, #0B1F5A 73%, #12245A 100%);
@@ -1071,8 +1075,8 @@ p {
 
 .even-box {
   background-color: white;
-  height: 24vh;
-  margin-right: -2%;
+  height: auto;
+  /* margin-right: 2%; */
   padding: 2%;
   font-family: "JetBrains Mono", monospace;
   /* Apply JetBrains Mono font to the paragraphs inside even boxes */
@@ -1321,6 +1325,7 @@ p {
 
   /* Live Events & Show */
 
+ 
   .even-arrow-section {
     color: white;
     text-align: center;
@@ -1329,12 +1334,14 @@ p {
   .even-box {
     background-color: white;
     margin: 2%;
+    height: auto;
   }
 
   .even-box p {
     color: #424E60;
     text-align: left;
     font-size: 12px;
+    margin-bottom: 2%;
   }
 
   /* Footer  */
@@ -1352,10 +1359,10 @@ p {
 }
 
 .mac-os #pricing {
-  padding-bottom: 5%;
+  padding-bottom: 10%;
 }
 
 .mac-os .pricing-column {
   padding: 2% 0%;
-  margin-top: 10%;
+  margin-top: 20%;
 }
