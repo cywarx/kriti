@@ -784,6 +784,10 @@ p {
   /* Set placeholder text color */
 }
 
+.input-form{
+  border-bottom: 1px solid #9d9c9c;
+}
+
 .line {
   border-bottom: 1px solid rgba(128, 128, 128, 0.34);
   position: absolute;
