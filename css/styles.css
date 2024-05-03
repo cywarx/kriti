@@ -785,12 +785,13 @@ p {
 }
 
 .line {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.34);
   position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 2px;
-  background-color: black;
+  /* height: 2px; */
+  background-color: grey;
   /* Color of the line */
 }
 
@@ -825,7 +826,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 3%;
+  margin-top: 5%;
 }
 
 /* -------------------------------- */
