@@ -1,17 +1,14 @@
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = 5000;
+app.use(express.static(__dirname));
 
 app.get("/", function(req, res){
     // console.log(req);
     // console.log(res);
-    res.send("Hello This is Home Page!");
-});
-
-app.get("/contact", function(reqq, res){
-    res.send("Hey! Cywarx@gmail.com");
+    res.sendFile(__dirname + "/index.html");
 });
 
 app.listen(port, function(){
-    console.log("Server Started on Port 3000")
+    console.log("Server Started on Port 5000")
 });
